@@ -8,11 +8,13 @@ greeting = document.querySelector(".js-greeting");
 const NAME_LS = "name";
 const SHOWING_CL = "showing";
 
+
 function handleSubmit(event){
 event.preventDefault();
 const currentValue = nameInput.value;
 localStorage.setItem(NAME_LS, currentValue);
     nameInput.value = '';
+    paintGreeting(currentValue)
 }
 
 function askForName(){

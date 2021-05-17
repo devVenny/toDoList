@@ -1,7 +1,9 @@
 .nameForm,
-.greeting{
+.greeting
+{
     display:none;
 } 
+
 .showing{
     display:block;
 }
